@@ -9,6 +9,9 @@ $merah2 = "\033[31m";
 $blue = "\e[1;34m";
 $useragent = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36";
 $key = getenv("KUNCIXX");
+if (!$key) {
+    die("Environment variable KUNCIXX tidak ditemukan!");
+}
 function decrypt_data($encrypted_data, $key) {
     $method = 'aes-256-cbc';  
     $key = hash('sha256', $key, true); // Konversi key menjadi 32 byte
