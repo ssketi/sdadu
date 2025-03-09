@@ -2,6 +2,8 @@ name: Jalan PHP
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '*/100 * * * *'
 
 jobs:
   run_bot:
