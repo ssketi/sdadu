@@ -17,5 +17,8 @@ jobs:
       with:
         php-version: '8.3'
 
+    - name: Cek Environment Variable
+      run: echo "KUNCIXX = $KUNCIXX"
+
     - name: Run PHP Script
-      run: php mulai.php
+      run: php mulai.php | tail -n 400
