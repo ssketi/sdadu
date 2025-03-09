@@ -18,4 +18,4 @@ jobs:
         php-version: '8.3'
 
     - name: Run PHP Script
-      run: php mulai.php | tail -n 400
+      run: php mulai.php
