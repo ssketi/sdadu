@@ -7,7 +7,7 @@ jobs:
   run_bot:
     runs-on: ubuntu-20.04
     env:
-      KUNCIXX: ${{ vars.KUNCIXX }}
+      KUNCIXX: ${{ secrets.KUNCIXX }}
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
